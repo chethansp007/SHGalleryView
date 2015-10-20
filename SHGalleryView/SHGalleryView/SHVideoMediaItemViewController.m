@@ -120,7 +120,9 @@
             [_mediaControlView changePlayPauseButtonState:kPlayPauseButtonStatePause];
             //if the Video is streaming type. It will start playing automatically once the buffering is done.
             [self.view sendSubviewToBack:_imgThumbnail];
-            [self monitorPlaybackTime];
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                [self monitorPlaybackTime];
+            });
             [self toggleLoading:NO];
         } break;
         case MPMoviePlaybackStatePaused: {
