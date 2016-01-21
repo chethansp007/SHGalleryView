@@ -20,15 +20,13 @@ Pod::Spec.new do |s|
   s.author        = { "Shan Ul Haq" => "g@grevolution.me" }
 
   s.platform      = :ios
-  s.platform      = :ios, "9.0"
-  s.ios.deployment_target = "7.0"
-  
-  s.source        = { :git => "https://github.com/chethansp007/SHGalleryView.git", :tag => s.version }
+  s.platform      = :ios, "6.0"
+  s.source        = { :git => "https://github.com/grevolution/SHGalleryView.git", :tag => s.version }
   s.source_files  = "SHGalleryView/SHGalleryView/*.{h,m}"
   s.resources     = "SHGalleryView/SHGalleryView/*.{xib}"
 
   s.framework  = "MediaPlayer"
   s.requires_arc = true
-  s.dependency "AFNetworking/UIKit", "~> 3.0"
+  s.dependency "AFNetworking/UIKit", "~>2.2"
 
 end

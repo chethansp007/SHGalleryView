@@ -1,3 +1,3 @@
-platform :ios, ‘9.0’
+platform :ios, '6.0'
 
 pod 'AFNetworking/UIKit'
