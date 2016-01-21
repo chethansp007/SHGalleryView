@@ -50,9 +50,8 @@
 
 #pragma mark - Orientation Methods
 
-//Since in Maxis app, we lock the orientation in the plist, app get crash if we set the diffrent orientaion in viewcontroller.
 - (BOOL)shouldAutorotate {
-    return NO;
+    return YES;
 }
 
 - (NSUInteger)supportedInterfaceOrientations {
